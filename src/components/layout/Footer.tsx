@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-6">
             <Link to="/" className="flex items-center gap-3">
-               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#12263a] text-[#c5a059] font-bold text-lg">
-                Z8
+              <div className="flex h-20 w-20">
+                <img src="src/components/images/logo-z8.png"></img>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-serif font-bold uppercase tracking-wider text-[#12263a] leading-tight">Marataízes</span>
@@ -62,7 +62,7 @@ export function Footer() {
             <ul className="flex flex-col gap-4 text-[12px] font-serif italic text-[#4a5568]">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 shrink-0 text-[#c5a059]" />
-                <span>Rua Principal, 123 - Centro <br/> Marataízes - ES</span>
+                <span>Rua Principal, 123 - Centro <br /> Marataízes - ES</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-[#c5a059]" />

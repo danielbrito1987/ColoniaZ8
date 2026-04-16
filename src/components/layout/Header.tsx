@@ -23,8 +23,11 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-[60px] flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#12263a] text-[#c5a059] font-bold text-lg">
+            {/* <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#12263a] text-[#c5a059] font-bold text-lg">
               Z8
+            </div> */}
+            <div className="flex h-20 w-20">
+              <img src="src/components/images/logo-z8.png"></img>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-serif font-bold uppercase tracking-wider text-[#12263a] leading-tight">Marataízes</span>
