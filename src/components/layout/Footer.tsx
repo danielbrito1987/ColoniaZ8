@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Anchor, Facebook, Instagram, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import logo from "../images/logo-z8.png";
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col gap-6">
             <Link to="/" className="flex items-center gap-3">
               <div className="flex h-20 w-20">
-                <img src="src/components/images/logo-z8.png"></img>
+                <img src={logo}></img>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-serif font-bold uppercase tracking-wider text-[#12263a] leading-tight">Marataízes</span>

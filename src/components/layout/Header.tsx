@@ -4,6 +4,7 @@ import { Anchor, Menu, X, Waves } from "lucide-react";
 import { cn } from "../../../lib/utils";
 import { Button } from "../../../components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "../../../components/ui/sheet";
+import logo from "../images/logo-z8.png";
 
 const navigation = [
   { name: "Início", href: "/" },
@@ -27,7 +28,7 @@ export function Header() {
               Z8
             </div> */}
             <div className="flex h-20 w-20">
-              <img src="src/components/images/logo-z8.png"></img>
+              <img src={logo}></img>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-serif font-bold uppercase tracking-wider text-[#12263a] leading-tight">Marataízes</span>
