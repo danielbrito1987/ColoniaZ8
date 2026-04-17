@@ -46,7 +46,7 @@ export default function Transparency() {
       <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1600" 
+            src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" 
             alt="Transparency and Data" 
             className="h-full w-full object-cover grayscale opacity-30"
             referrerPolicy="no-referrer"

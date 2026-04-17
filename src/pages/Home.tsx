@@ -20,7 +20,7 @@ const banners = [
     description: "Nossa Essência",
     href: "/quem-somos",
     bg: "bg-[#1a3c5a]",
-    img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1200",
+    img: "https://images.pexels.com/photos/29850106/pexels-photo-29850106.jpeg",
     gridClass: "md:col-span-2 md:row-span-2",
     arrowText: "Explore a nossa história →"
   },
@@ -29,7 +29,7 @@ const banners = [
     description: "Desenvolvimento",
     href: "/projetos",
     bg: "bg-[#234c6e]",
-    img: "https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&q=80&w=1200",
+    img: "https://images.pexels.com/photos/5412052/pexels-photo-5412052.jpeg",
     gridClass: "md:col-span-1 md:row-span-1",
     arrowText: "→"
   },
@@ -38,7 +38,7 @@ const banners = [
     description: "Comunidade",
     href: "/galeria",
     bg: "bg-[#2c5d82]",
-    img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800",
+    img: "https://images.pexels.com/photos/29284808/pexels-photo-29284808.jpeg",
     gridClass: "md:col-span-1 md:row-span-1",
     arrowText: "→"
   },
@@ -47,7 +47,7 @@ const banners = [
     description: "Governança",
     href: "/transparencia",
     bg: "bg-[#c5a059]",
-    img: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1200",
+    img: "https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg",
     gridClass: "md:col-span-2 md:row-span-1",
     arrowText: "Acessar demonstrativos →"
   }
