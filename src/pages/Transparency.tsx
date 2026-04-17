@@ -18,11 +18,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from ".
 import { Button } from "../../components/ui/button";
 
 const financialData = [
-  { id: 1, date: "2024-03-15", description: "Taxas de Associados", type: "Receita", value: "R$ 15.450,00", status: "Confirmado" },
-  { id: 2, date: "2024-03-10", description: "Manutenção de Sede", type: "Despesa", value: "R$ 2.300,00", status: "Pago" },
-  { id: 3, date: "2024-03-05", description: "Convênio Médico", type: "Despesa", value: "R$ 8.900,00", status: "Pago" },
-  { id: 4, date: "2024-02-28", description: "Doação Institucional", type: "Receita", value: "R$ 5.000,00", status: "Confirmado" },
-  { id: 5, date: "2024-02-20", description: "Assessoria Jurídica", type: "Despesa", value: "R$ 3.500,00", status: "Pago" },
+  { id: 1, date: "2024-03-15", description: "Taxas de Associados", type: "Receita", value: "R$ 0,00", status: "Confirmado" },
+  { id: 2, date: "2024-03-10", description: "Manutenção de Sede", type: "Despesa", value: "R$ 0,00", status: "Pago" },
+  { id: 3, date: "2024-03-05", description: "Convênio Médico", type: "Despesa", value: "R$ 0,00", status: "Pago" },
+  { id: 4, date: "2024-02-28", description: "Doação Institucional", type: "Receita", value: "R$ 0,00", status: "Confirmado" },
+  { id: 5, date: "2024-02-20", description: "Assessoria Jurídica", type: "Despesa", value: "R$ 0,00", status: "Pago" },
 ];
 
 const administrativeDocs = [
@@ -69,9 +69,9 @@ export default function Transparency() {
         {/* Summary Stats Grid */}
         <div className="grid gap-0 md:grid-cols-2 lg:grid-cols-3 mb-20 border-l border-t border-black/5">
           {[
-            { label: "Receitas Mar/24", value: "R$ 42.150,00", icon: TrendingUp, color: "text-[#c5a059]", bg: "bg-white" },
-            { label: "Despesas Mar/24", value: "R$ 28.340,00", icon: PieChart, color: "text-[#12263a]", bg: "bg-[#fcfaf7]" },
-            { label: "Saldo Atual", value: "R$ 136.810,45", icon: History, color: "text-[#c5a059]", bg: "bg-[#12263a]", textColor: "text-white" }
+            { label: "Receitas Mar/24", value: "R$ 0,00", icon: TrendingUp, color: "text-[#c5a059]", bg: "bg-white" },
+            { label: "Despesas Mar/24", value: "R$ 0,00", icon: PieChart, color: "text-[#12263a]", bg: "bg-[#fcfaf7]" },
+            { label: "Saldo Atual", value: "R$ 0,00", icon: History, color: "text-[#c5a059]", bg: "bg-[#12263a]", textColor: "text-white" }
           ].map((stat, i) => (
             <div key={i} className={cn("p-12 border-r border-b border-black/5 flex flex-col justify-center", stat.bg)}>
               <div className={cn("mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-black/5", stat.textColor ? "bg-white/10" : "")}>
