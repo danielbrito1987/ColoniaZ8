@@ -4,55 +4,35 @@ import { Maximize2, X, Image as ImageIcon } from "lucide-react";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { cn } from "../../lib/utils";
+import image1 from "../components/images/gallery/1000621769.jpg";
+import image2 from "../components/images/gallery/1000621770.jpg";
+import image3 from "../components/images/gallery/1000621771.jpg";
+import image4 from "../components/images/gallery/1000621772.jpg";
 
 const images = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&q=80&w=1200",
-    title: "Orla de Marataízes",
-    category: "Natureza",
+    src: image1,
+    title: "Fachada da Colônia",
+    category: "Quem Somos",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1200",
-    title: "Embarcações",
+    src: image2,
+    title: "Nossa Equipe",
     category: "Atividades",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1518331647614-7a1f04cd34cf?auto=format&fit=crop&q=80&w=1200",
+    src: image3,
     title: "Trabalho Coletivo",
     category: "Social",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&q=80&w=1200",
-    title: "Manutenção de Redes",
+    src: image4,
+    title: "Fiscalização",
     category: "Trabalho",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1200",
-    title: "Nascer do Sol",
-    category: "Natureza",
-  },
-  {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1200",
-    title: "Reunião de Associados",
-    category: "Social",
-  },
-  {
-    id: 7,
-    src: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1200",
-    title: "Pescado Fresco",
-    category: "Atividades",
-  },
-  {
-    id: 8,
-    src: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=1200",
-    title: "Bares Marítimos",
-    category: "Natureza",
   },
 ];
 
