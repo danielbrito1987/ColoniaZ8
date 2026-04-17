@@ -63,11 +63,11 @@ export function Footer() {
             <ul className="flex flex-col gap-4 text-[12px] font-serif italic text-[#4a5568]">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 shrink-0 text-[#c5a059]" />
-                <span>Rua Principal, 123 - Centro <br /> Marataízes - ES</span>
+                <span>Rua Dr. Jaime S. Neves, 37 - Barra do Itapemirim <br /> Marataízes - ES</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-[#c5a059]" />
-                <span>(28) 3532-0000</span>
+                <span>(28) 3532-1692</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-[#c5a059]" />
