@@ -49,7 +49,7 @@ export default function Gallery() {
   return (
     <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-[60px]">
       <div className="flex flex-col items-center text-center mb-16">
-        <Badge className="bg-[#c5a059] text-white border-none rounded-[2px] mb-4 px-3 py-1 text-[10px] uppercase tracking-[2px] font-bold">Registros em Mar</Badge>
+        <Badge className="bg-[#c5a059] text-white border-none rounded-[2px] mb-4 px-3 py-1 text-[10px] uppercase tracking-[2px] font-bold">Registros da Comunidade</Badge>
         <h1 className="text-4xl font-serif font-bold tracking-tight sm:text-6xl mb-6 text-[#12263a] uppercase">Nossa <span className="text-[#c5a059] italic lowercase">Galeria</span></h1>
         <p className="max-w-2xl text-[12px] font-bold uppercase tracking-[1px] text-[#4a5568]">
           Um mosaico visual da vida, do trabalho e das belezas naturais que 
