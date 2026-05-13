@@ -99,8 +99,8 @@ export default function Home() {
       </section>
 
       {/* Utility Bar (Design Stat Bar) */}
-      <div className="h-auto md:h-[120px] px-4 sm:px-6 lg:px-[60px] bg-white border-t border-black/5 flex flex-col md:flex-row items-center justify-between gap-6 py-6 md:py-0 shadow-inner">
-        <div className="flex flex-wrap gap-8 md:gap-[40px] justify-center md:justify-start">
+      <div className="h-auto md:h-[120px] px-4 sm:px-6 lg:px-[60px] bg-white border-t border-black/5 flex flex-col md:flex-row items-center justify-center gap-6 py-6 md:py-0 shadow-inner">
+        {/* <div className="flex flex-wrap gap-8 md:gap-[40px] justify-center md:justify-start">
           {[
             { label: "Associados Ativos", value: "1.482" },
             { label: "Fundo de Apoio (2024)", value: "R$ 420.500,00" },
@@ -111,11 +111,11 @@ export default function Home() {
               <span className="font-serif font-bold text-lg text-[#12263a]">{stat.value}</span>
             </div>
           ))}
-        </div>
+        </div> */}
         
         <Button asChild className="bg-[#12263a] text-white hover:bg-[#c5a059] border-none rounded-[4px] px-8 h-12 text-[11px] font-bold uppercase tracking-[1.5px]">
           <a href="https://coopsis.com.br" target="_blank" rel="noopener noreferrer">
-            Acesso Sistema COOPSIS
+            Acesso Sistema
           </a>
         </Button>
       </div>

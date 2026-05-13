@@ -7,31 +7,31 @@ import { Button } from "../../components/ui/button";
 
 const projects = [
   {
-    title: "Apoio ao Registro de Pesca",
-    description: "Auxílio completo para regularização e renovação do Registro Geral da Atividade Pesqueira (RGP).",
+    title: "Cadastramento e Regualrização Profissional",
+    description: "Cadastramento junto ao Ministério da Pesca, Apoio documental perante a Capitânia dos Portos, Atualização Cadastral, Orientação sobre documentação obrigatória, Encaminhamento para emissão da carteira profissional de pescador.",
     status: "Em andamento",
     icon: CheckCircle2,
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Capacitação Técnica",
-    description: "Cursos e workshops sobre segurança no mar, manutenção de motores e novas técnicas de pesca.",
+    title: "Auxílio no Seguro-Defeso",
+    description: "A entidade auxilia pescadores no processo de obtenção do seguro-defeso, preparando documentação e orientando sobre exigências legais e períodos de defeso. Isso aparece expressamente em pesquisa acadêmica sobre a pesca artesanal em Marataízes.",
     status: "Novo",
     icon: Ship,
     image: "https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Preservação Costeira",
-    description: "Iniciativas de limpeza de praias e monitoramento de espécies migratórias em nossa costa.",
+    title: "Emissão de Documentos Civis",
+    description: "A colônia sediou mutirões de emissão de RG voltados especificamente à comunidade pesqueira, em parceria com a Prefeitura de Marataízes. Nessas ações foram emitidas dezenas de documentos para pescadores que tinham dificuldade de acesso ao serviço público.",
     status: "Em andamento",
-    icon: Waves,
+    icon: Users,
     image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800"
   },
   {
-    title: "Saúde do Pescador",
-    description: "Convênios e parcerias para atendimento médico e odontológico exclusivo aos associados.",
+    title: "Capacitação e Profissionalização",
+    description: "A entidade participa da qualificação profissional dos pescadores. Em 2019, pescadores vinculados à colônia receberam formação de Aquaviários - Pescador Profissional Nível 1, permitindo atuação regularizada em águas marítimas e interiores.",
     status: "Permanente",
-    icon: Users,
+    icon: Waves,
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800"
   }
 ];
@@ -50,6 +50,17 @@ export default function Projects() {
               Desenvolvemos ações concretas para fortalecer o setor pesqueiro, 
               garantindo que o pescador de Marataízes tenha as ferramentas e o apoio necessários.
             </p>
+            <br />
+            <p className="max-w-xl text-[12px] font-bold uppercase tracking-[1px] text-[#4a5568]">
+              Cadastramento e regularização profissional
+            </p>
+            <ul>
+              <li>- Cadastramento junto ao Ministérioa da Pesca</li>
+              <li>- Apoio documental perante a Capitania dos Portos</li>
+              <li>- Atualização cadastral</li>
+              <li>- Orientação sobre documentação obrigatória</li>
+              <li>- Encaminhamento para emissão da carteira profissional de pescador</li>
+            </ul>
           </div>
           <div className="bg-white p-8 border border-black/5 flex items-center gap-6 shadow-sm">
             <div className="bg-[#12263a] p-3 rounded-full text-[#c5a059]">
@@ -72,7 +83,7 @@ export default function Projects() {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="overflow-hidden border border-black/5 shadow-none h-full flex flex-col sm:flex-row rounded-none group">
-                <div className="sm:w-2/5 relative h-64 sm:h-auto overflow-hidden">
+                {/* <div className="sm:w-2/5 relative h-64 sm:h-auto overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title} 
@@ -82,12 +93,12 @@ export default function Projects() {
                   <div className="absolute top-4 left-4">
                     <Badge className="bg-[#12263a]/90 text-white rounded-[2px] border-none text-[9px] uppercase tracking-widest px-3">{project.status}</Badge>
                   </div>
-                </div>
+                </div> */}
                 <div className="sm:w-3/5 flex flex-col bg-white">
                   <CardHeader className="p-8 pb-2">
                     <div className="flex items-center gap-2 mb-3 text-[#c5a059]">
                       <project.icon className="h-5 w-5" />
-                      <span className="text-[10px] font-bold uppercase tracking-widest">Iniciativa</span>
+                      {/* <span className="text-[10px] font-bold uppercase tracking-widest">Iniciativa</span> */}
                     </div>
                     <CardTitle className="text-2xl font-serif font-bold text-[#12263a] leading-tight group-hover:italic transition-all">{project.title}</CardTitle>
                   </CardHeader>
@@ -95,9 +106,9 @@ export default function Projects() {
                     <div className="text-[13px] text-[#4a5568] leading-relaxed mb-8">
                       {project.description}
                     </div>
-                    <Button variant="link" className="p-0 h-auto text-[#12263a] font-bold uppercase tracking-widest text-[10px] hover:text-[#c5a059] group">
+                    {/* <Button variant="link" className="p-0 h-auto text-[#12263a] font-bold uppercase tracking-widest text-[10px] hover:text-[#c5a059] group">
                       Ver detalhes <ChevronRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </div>
               </Card>

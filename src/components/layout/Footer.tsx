@@ -50,7 +50,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3 text-[11px] font-bold uppercase tracking-wider text-[#4a5568]">
               <li>
                 <a href="https://coopsis.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-[#c5a059] transition-colors">
-                  Sistema Coopsis
+                  Sistema
                 </a>
               </li>
               <li><a href="#" className="hover:text-[#c5a059] transition-colors">Ministério da Pesca</a></li>
@@ -67,11 +67,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-[#c5a059]" />
-                <span>(28) 3532-1692</span>
+                <span>(28) 99972-4553</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-[#c5a059]" />
-                <span className="lowercase">contato@cpmz8.org.br</span>
+                <span className="lowercase">contato@coloniademarataizesz8.com</span>
               </li>
             </ul>
           </div>

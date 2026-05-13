@@ -8,31 +8,61 @@ import image1 from "../components/images/gallery/1000621769.jpg";
 import image2 from "../components/images/gallery/1000621770.jpg";
 import image3 from "../components/images/gallery/1000621771.jpg";
 import image4 from "../components/images/gallery/1000621772.jpg";
+import image5 from "../components/images/gallery/1000662755.jpg";
+import image6 from "../components/images/gallery/1000662756.jpg";
+import image7 from "../components/images/gallery/1000662757.jpg";
+import image8 from "../components/images/gallery/1000662758.jpg";
+import image9 from "../components/images/gallery/1000662759.jpg";
+import image10 from "../components/images/gallery/1000662760.jpg";
 
 const images = [
   {
     id: 1,
-    src: image1,
-    title: "Fachada da Colônia",
-    category: "Quem Somos",
+    src: image4,
+    title: "Reunião junto ao IBAMA/ES para promover melhorias e humanização na fiscalização de autoridade ambiental",
+    category: "Trabalho",
   },
   {
     id: 2,
-    src: image2,
-    title: "Nossa Equipe",
-    category: "Atividades",
+    src: image5,
+    title: "Recebimento de licanças de pesca das embarcações do município de Marataízes junto a Superintendência Federal de Pesca e Aquicultura",
+    category: "Trabalho",
   },
   {
     id: 3,
-    src: image3,
-    title: "Trabalho Coletivo",
-    category: "Social",
+    src: image6,
+    title: "Homenagem aos pescadores mais antigos do município de Marataízes junto ao Ministério da Pesca",
+    category: "Trabalho",
   },
   {
     id: 4,
-    src: image4,
-    title: "Fiscalização",
+    src: image7,
+    title: "Debate na Câmara Municipal de Marataízes para promover a pesca local",
     category: "Trabalho",
+  },
+  {
+    id: 5,
+    src: image8,
+    title: "Homenagem feita pelo Município de Marataízes ao atendimento dos serviços públicos realizados pela Colônia",
+    category: "Quem Somos",
+  },
+  {
+    id: 6,
+    src: image2,
+    title: "Reunião para alinhamento para busca de benefícios a classe pesqueira junto aos presidentes das colônias locais",
+    category: "Atividades",
+  },
+  {
+    id: 7,
+    src: image9,
+    title: "Reunião com pescadores da comunidade de Praia dos Cações para tratativa de assuntos relacionados ao seguro dos pescadores",
+    category: "Social",
+  },
+  {
+    id: 8,
+    src: image10,
+    title: "Reunião junto à Marinha do Brasil para firmar parcerias entre as entidades provendo apoio a classe pesqueira",
+    category: "Social",
   },
 ];
 
@@ -57,7 +87,7 @@ export default function Gallery() {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 mb-16 border-b border-black/5 pb-8">
+      {/* <div className="flex flex-wrap justify-center gap-4 mb-16 border-b border-black/5 pb-8">
         {categories.map((cat) => (
           <Button
             key={cat}
@@ -73,7 +103,7 @@ export default function Gallery() {
             {cat}
           </Button>
         ))}
-      </div>
+      </div> */}
 
       <motion.div 
         layout
@@ -98,7 +128,7 @@ export default function Gallery() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#12263a] via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-all duration-500 flex flex-col justify-end p-8">
-                <Badge className="bg-[#c5a059] text-white border-none rounded-[2px] w-fit mb-4 text-[8px] uppercase tracking-widest px-2">{image.category}</Badge>
+                {/* <Badge className="bg-[#c5a059] text-white border-none rounded-[2px] w-fit mb-4 text-[8px] uppercase tracking-widest px-2">{image.category}</Badge> */}
                 <div className="flex items-center justify-between">
                   <h3 className="text-white font-serif italic text-xl translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">{image.title}</h3>
                   <Maximize2 className="text-white h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200" />

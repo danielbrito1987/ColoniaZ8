@@ -32,7 +32,7 @@ export function Header() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-serif font-bold uppercase tracking-wider text-[#12263a] leading-tight">Marataízes</span>
-              <span className="text-[10px] text-[#c5a059] font-bold uppercase tracking-[2px]">Colônia de Pescadores</span>
+              <span className="text-[10px] text-[#c5a059] font-bold uppercase tracking-[2px]">Colônia de Pescadores Z8</span>
             </div>
           </Link>
         </div>
@@ -58,7 +58,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Button variant="outline" size="sm" asChild className="hidden lg:flex bg-[#12263a] text-white hover:bg-[#c5a059] border-none rounded-[4px] px-6 h-10 text-[11px] font-bold uppercase tracking-[1.5px]">
             <a href="https://coopsis.com.br" target="_blank" rel="noopener noreferrer">
-              Sistema Coopsis
+              Sistema
             </a>
           </Button>
 
