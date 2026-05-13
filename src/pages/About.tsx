@@ -40,8 +40,8 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid gap-16 lg:grid-cols-2 items-center mt-16">
-          <div className="relative">
+        <div className="mt-16">
+          {/* <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-none border-[1px] border-black/10 shadow-3xl relative z-10 bg-[#f8f5f0]">
               <img 
                 src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1000" 
@@ -58,7 +58,7 @@ export default function About() {
               </p>
               <div className="mt-6 font-bold text-[#c5a059] uppercase tracking-[2.5px] text-[10px] border-t border-white/10 pt-4">— Presidência CPMZ8</div>
             </div>
-          </div>
+          </div> */}
           
           <div className="space-y-12 lg:pl-12">
             <div>
