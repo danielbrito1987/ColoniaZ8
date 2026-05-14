@@ -41,7 +41,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-[9px] font-bold uppercase tracking-widest opacity-60 mb-1">Telefone</div>
-                  <div className="text-lg font-serif italic">(28) 3532-0000</div>
+                  <div className="text-lg font-serif italic">(28) 99972-4553</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -50,7 +50,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-[9px] font-bold uppercase tracking-widest opacity-60 mb-1">E-mail</div>
-                  <div className="text-lg font-serif italic lowercase">contato@cpmz8.org.br</div>
+                  <div className="text-lg font-serif italic lowercase">contato@coloniademarataizesz8.com</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -143,7 +143,7 @@ export default function Contact() {
             <span className="text-sm italic">Sede CPMZ8 - Marataízes, Espírito Santo</span>
          </div>
          <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14917.472718146313!2d-40.898628!3d-21.040183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb93437f8f903f7%3A0xc6c76db31e6783d3!2sMarata%C3%ADzes%2C%20ES!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6081414732475!2d-40.809624199999995!3d-21.008339300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb93b8abf6f8779%3A0x3381a00c1f6701e7!2sCol%C3%B4nia%20de%20Pescadores%20Z8!5e0!3m2!1spt-BR!2sbr!4v1778760207455!5m2!1spt-BR!2sbr"
            width="100%"
            height="100%"
            style={{ border: 0 }}

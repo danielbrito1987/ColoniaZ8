@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { CheckCircle2, Waves, Ship, Fish, Users, ChevronRight } from "lucide-react";
+import { CheckCircle2, Waves, Ship, Fish, Users, ChevronRight, ExternalLink, Newspaper } from "lucide-react";
 import { Badge } from "../../components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
@@ -36,6 +36,21 @@ const projects = [
   }
 ];
 
+const news = [
+  {
+    title: "Pescadores de Marataízes recebem carteiras profissionais",
+    source: "Espírito Santo Notícias",
+    date: "22 Mar 2019",
+    url: "https://www.espiritosantonoticias.com.br/pescadores-de-marataizes-recebem-carteiras-profissionais"
+  },
+  {
+    title: "Prefeitura de Marataízes e Colônia Z8 realizam mutirão para emissão de RG",
+    source: "Jornal do ES",
+    date: "02 Fev 2023",
+    url: "https://jornaldoes.com.br/prefeitura-de-marataizes-e-colonia-z8-realizam-mutirao-para-emissao-de-rg/?utm_source=chatgpt.com"
+  },
+];
+
 export default function Projects() {
   return (
     <div className="flex flex-col gap-16 py-16">
@@ -50,25 +65,14 @@ export default function Projects() {
               Desenvolvemos ações concretas para fortalecer o setor pesqueiro, 
               garantindo que o pescador de Marataízes tenha as ferramentas e o apoio necessários.
             </p>
-            <br />
-            <p className="max-w-xl text-[12px] font-bold uppercase tracking-[1px] text-[#4a5568]">
-              Cadastramento e regularização profissional
-            </p>
-            <ul>
-              <li>- Cadastramento junto ao Ministérioa da Pesca</li>
-              <li>- Apoio documental perante a Capitania dos Portos</li>
-              <li>- Atualização cadastral</li>
-              <li>- Orientação sobre documentação obrigatória</li>
-              <li>- Encaminhamento para emissão da carteira profissional de pescador</li>
-            </ul>
           </div>
           <div className="bg-white p-8 border border-black/5 flex items-center gap-6 shadow-sm">
             <div className="bg-[#12263a] p-3 rounded-full text-[#c5a059]">
               <Fish className="h-6 w-6" />
             </div>
             <div className="flex flex-col">
-              <span className="text-3xl font-serif font-bold text-[#12263a] leading-none">+1.200</span>
-              <span className="text-[10px] font-bold text-[#4a5568] uppercase tracking-widest mt-1">Pescadores Apoiados</span>
+              <span className="text-3xl font-serif font-bold text-[#12263a] leading-none">+15.000</span>
+              <span className="text-[10px] font-bold text-[#4a5568] uppercase tracking-widest mt-1">Pessoas Atendidas</span>
             </div>
           </div>
         </div>
@@ -123,7 +127,7 @@ export default function Projects() {
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 text-center">
             {[
               { label: "Anos de Tradição", value: "35+" },
-              { label: "Associados Ativos", value: "1.250" },
+              { label: "Associados Ativos", value: "15.000" },
               { label: "Projetos Concluídos", value: "48" },
               { label: "Cursos Ministrados", value: "32" }
             ].map((stat) => (
@@ -133,6 +137,50 @@ export default function Projects() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* News & Clipping Section */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-[60px]">
+        <div className="flex flex-col mb-12">
+          {/* <Badge className="bg-[#c5a059] text-white border-none rounded-[2px] mb-4 px-3 py-1 text-[10px] uppercase tracking-[2px] font-bold w-fit">Clipping</Badge> */}
+          <h2 className="text-3xl font-serif font-bold text-[#12263a] mb-2 uppercase">Notícias e <span className="text-[#c5a059] italic lowercase">Destaques</span></h2>
+          <div className="h-px bg-black/10 w-full mt-4" />
+        </div>
+
+        <div className="grid gap-0 border-l border-t border-black/5">
+          {news.map((item, index) => (
+            <motion.a
+              key={index}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group flex flex-col md:flex-row md:items-center justify-between p-8 border-r border-b border-black/5 bg-white hover:bg-[#f8f5f0] transition-colors"
+            >
+              <div className="flex items-start gap-6 max-w-3xl">
+                <div className="bg-[#f8f5f0] p-4 group-hover:bg-[#12263a] transition-colors">
+                  <Newspaper className="h-6 w-6 text-[#c5a059]" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-[#c5a059]">{item.source}</span>
+                    <span className="text-[10px] text-[#4a5568]">•</span>
+                    <span className="text-[10px] text-[#4a5568] font-medium">{item.date}</span>
+                  </div>
+                  <h3 className="text-xl font-serif font-bold text-[#12263a] group-hover:text-[#c5a059] transition-colors leading-tight">
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+              <div className="mt-6 md:mt-0 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#12263a] opacity-0 group-hover:opacity-100 transition-opacity">
+                Ler matéria <ExternalLink className="h-3 w-3" />
+              </div>
+            </motion.a>
+          ))}
         </div>
       </section>
 
