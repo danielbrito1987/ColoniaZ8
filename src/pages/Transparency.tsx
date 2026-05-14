@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { 
-  FileText, 
-  Download, 
-  History, 
-  Search, 
-  TrendingUp, 
-  PieChart, 
+import {
+  FileText,
+  Download,
+  History,
+  Search,
+  TrendingUp,
+  PieChart,
   ShieldCheck,
   ChevronDown
 } from "lucide-react";
@@ -36,7 +36,7 @@ const administrativeDocs = [
 export default function Transparency() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredFinancials = financialData.filter(item => 
+  const filteredFinancials = financialData.filter(item =>
     item.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -45,15 +45,15 @@ export default function Transparency() {
       {/* Editorial Header with Image Source */}
       <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" 
-            alt="Transparency and Data" 
+          <img
+            src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg"
+            alt="Transparency and Data"
             className="h-full w-full object-cover grayscale opacity-30"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#12263a]/90 to-[#12263a]/40" />
         </div>
-        
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-[60px] relative z-10 text-center">
           <Badge className="bg-[#c5a059] text-white border-none rounded-[2px] mb-6 px-3 py-1 text-[10px] uppercase tracking-[2px] font-bold">Transparência Ativa</Badge>
           <h1 className="text-5xl font-serif font-bold tracking-tight sm:text-7xl text-white mb-6 uppercase">
@@ -65,8 +65,8 @@ export default function Transparency() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-20 sm:px-6 lg:px-[60px]">
-        {/* Summary Stats Grid */}
+      <div className="container mx-auto px-4 py-20 sm:px-6 lg:px-[60px]"></div>
+      {/* <div className="container mx-auto px-4 py-20 sm:px-6 lg:px-[60px]">
         <div className="grid gap-0 md:grid-cols-2 lg:grid-cols-3 mb-20 border-l border-t border-black/5">
           {[
             { label: "Receitas Mar/24", value: "R$ 0,00", icon: TrendingUp, color: "text-[#c5a059]", bg: "bg-white" },
@@ -163,7 +163,6 @@ export default function Transparency() {
           </TabsContent>
         </Tabs>
 
-        {/* External Link Section */}
         <section className="mt-32">
           <div className="bg-[#12263a] text-white p-16 sm:p-24 relative overflow-hidden flex flex-col items-center text-center">
             <div className="absolute top-0 right-0 w-full h-full">
@@ -186,7 +185,7 @@ export default function Transparency() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   );
 }
